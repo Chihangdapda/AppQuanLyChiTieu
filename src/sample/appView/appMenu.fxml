@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="appMenu" prefHeight="507.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.AppMenuController">
+   <children>
+      <ImageView fitHeight="512.0" fitWidth="746.0">
+         <image>
+            <Image url="@../appImage/anhMenu.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="add" layoutX="54.0" layoutY="155.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #00FFCC; -fx-background-radius: 5;" text="Them Moi">
+         <effect>
+            <DropShadow color="#084649" />
+         </effect></Button>
+      <Button fx:id="search" layoutX="54.0" layoutY="201.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #00FFCC; -fx-background-radius: 5;" text="Tim Kiem">
+         <effect>
+            <DropShadow color="#084649" />
+         </effect></Button>
+      <Button fx:id="report" layoutX="54.0" layoutY="247.0" mnemonicParsing="false" onAction="#report" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #00FFCC; -fx-background-radius: 5;" text="Bao Cao">
+         <effect>
+            <DropShadow color="#084649" />
+         </effect></Button>
+      <Button fx:id="edit" layoutX="54.0" layoutY="293.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #00FFCC; -fx-background-radius: 5;" text="Chinh Sua">
+         <effect>
+            <DropShadow color="#084649" />
+         </effect></Button>
+      <Button fx:id="delete" layoutX="54.0" layoutY="339.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #00FFCC; -fx-background-radius: 5;" text="Xoa">
+         <effect>
+            <DropShadow color="#084649" />
+         </effect></Button>
+      <Button fx:id="logOut" layoutX="54.0" layoutY="383.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #00FFCC; -fx-background-radius: 5;" text="Thoat">
+         <effect>
+            <DropShadow color="#084649" spread="0.16" />
+         </effect></Button>
+
+      <Label layoutX="88.0" layoutY="45.0" text="TONG THU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="253.0" layoutY="44.0" text="DA CHI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="45.0" text="CON LAI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalIncome" layoutX="102.0" layoutY="68.0" />
+      <Label fx:id="totalSpent" layoutX="257.0" layoutY="67.0" />
+      <Label fx:id="totalRemaining" layoutX="407.0" layoutY="67.0" />
+      <TableView fx:id="table" layoutX="221.0" layoutY="139.0" prefHeight="303.0" prefWidth="465.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="100.0" text="name" />
+          <TableColumn fx:id="contentColumn" prefWidth="99.0" text="content" />
+            <TableColumn fx:id="moneyColumn" prefWidth="85.0" text="money" />
+            <TableColumn fx:id="dateColumn" prefWidth="88.0" text="date" />
+            <TableColumn fx:id="noteColumn" prefWidth="92.0" text="note" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

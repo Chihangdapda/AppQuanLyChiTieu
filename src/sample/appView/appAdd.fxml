@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appView.AddCotroller">
+   <children>
+      <ImageView fitHeight="427.0" fitWidth="634.0">
+         <image>
+            <Image url="@../appImage/FunctionImage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="95.0" layoutY="82.0" text="Ten" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="125.0" text="Noi dung" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="174.0" text="So tien" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="271.0" text="Ngay" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="222.0" text="Ghi chu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+         <Button fx:id="okObj" layoutX="280.0" layoutY="321.0" mnemonicParsing="false" onAction="#okObj" prefHeight="25.0" prefWidth="97.0" text="ok">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="backObj" layoutX="430.0" layoutY="321.0" mnemonicParsing="false" onAction="#backObj" prefHeight="25.0" prefWidth="106.0" text="back">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <DatePicker fx:id="dateObj" layoutX="226.0" layoutY="264.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="nameObj" layoutX="224.0" layoutY="65.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="contentObj" layoutX="224.0" layoutY="117.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="moneyObj" layoutX="224.0" layoutY="162.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="noteObj" layoutX="224.0" layoutY="214.0" prefHeight="25.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-border-color: #CC99FF; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>
